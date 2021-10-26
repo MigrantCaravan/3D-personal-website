@@ -1,3 +1,19 @@
+# My Webpage (under construction)
+
+## Description
+
+This my personal webpage. It displays a 3D models of some of the things I like
+
+![](public/DEMO.gif)
+
+## What is react-three-fiber?
+
+React-three-fiber is a React renderer for Three.js on the web and react-native, it is a boost to the speed at which you create 3D models and animations with Three.js
+
+## 3D models
+
+All the models where dowloaded from [poly.pizza](https://poly.pizza/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

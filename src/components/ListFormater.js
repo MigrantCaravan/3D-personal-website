@@ -53,9 +53,9 @@ const Title = styled.strong`
     transition: 0.25s;
   }
   :hover {
-    box-shadow: inset -1em 0 1em 0 red, 0 0.05em 0.5em rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1em 0 1em 0 #bccc9a, 0 0.05em 0.5em rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-    background: blue;
+    background: #d1e8e4;
     transform: scale(1.05);
     z-index: 10;
     transform: translateX(0.125em);

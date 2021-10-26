@@ -24,7 +24,7 @@ const links = [
   {
     href: "https://www.stream-cred.com/",
     subtitle: "Free beats",
-    title: "Stream-Cred",
+    title: "StreamCred",
   },
 ];
 
@@ -43,6 +43,7 @@ function Model(props) {
 function App() {
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
+      <Background></Background>
       <Wrapper>
         <TextBackground>
           <Saludo>Hola, salut, hi!</Saludo>
@@ -72,7 +73,7 @@ function App() {
       >
         <ambientLight intensity={0.5} />
         <directionalLight intensity={0.3} position={[5, 25, 20]} />
-        <color attach="background" args={["green"]} />
+        <color attach="background" args={["#BCCC9A"]} />
         <fog attach="fog" args={["#101010", 10, 50]} />
         {/* <axesHelper args={[5]}></axesHelper> */}
         <Suspense fallback={null}>
@@ -175,6 +176,18 @@ const Wrapper = styled.div`
   top: 15%;
 `;
 
+const Background = styled.div`
+  position: absolute;
+  left: 3%;
+  top: 15%;
+  background-color: grey;
+  height: 800px;
+  width: 800px;
+  opacity: 0.8;
+  z-index: 1;
+  border-radius: 8px;
+`;
+
 const TextBackground = styled.div`
   height: 800px;
   width: 700px;
@@ -182,12 +195,11 @@ const TextBackground = styled.div`
   font-size: 15px;
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   /* background-color: blue; */
-  /* opacity: 0.5; */
 `;
 
 const Saludo = styled.p`
-  background: red;
-  color: whitesmoke;
+  background: #a9333a;
+  color: white;
   padding: 0.5em 0.75em;
   font-weight: 400;
   display: inline-flex;
@@ -207,16 +219,17 @@ const Intro = styled.div`
   will-change: scroll-position;
   font-size: 1.5em;
   margin: 5vmin 0;
+  color: white;
 `;
 
 const Pregunta = styled.strong`
   cursor: help;
-  color: red;
+  color: #a9333a;
 `;
 
 const Lista = styled.div`
   margin: 1vmin 0;
-  box-shadow: inset -6px 0 0 0 red;
+  box-shadow: inset -6px 0 0 0 #a9333a;
   background: var(--fg);
   color: var(--bg);
   display: inline-flex;
